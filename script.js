@@ -1,5 +1,5 @@
 // Ganti dengan URL Deployment Google Apps Script Anda
-const SCRIPT_URL = "URL_WEB_APP_GOOGLE_SCRIPT_ANDA";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzw7m0L1OqBdYUwzZjbEpfmgAdGvzm4B90SZkDPWQ2DNRhzu4RVv68PrUsiakevsPNKXQ/exec";
 
 const form = document.getElementById('inventarisForm');
 const btnSubmit = document.getElementById('btnSubmit');
