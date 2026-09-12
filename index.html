@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTARIS LAB SMK PINTAR - SMK 17 MUNCAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>INVENTARIS LAB SMK PINTAR</h1>
+        <h2>SMK 17 MUNCAR</h2>
+    </header>
+
+    <div class="container">
+        <!-- Form Input Data -->
+        <section class="card">
+            <h3>Tambah Laporan Kerusakan</h3>
+            <form id="inventarisForm">
+                <div class="form-group">
+                    <label for="namaLab">NAMA LAB</label>
+                    <select id="namaLab" required>
+                        <option value="">-- Pilih Lab --</option>
+                        <option value="Lab Komputer 1">Lab Komputer 1</option>
+                        <option value="Lab Komputer 2">Lab Komputer 2</option>
+                        <option value="Lab Multimedia">Lab Multimedia</option>
+                        <option value="Lab Rekayasa Perangkat Lunak">Lab RPL</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="namaKomputer">NAMA KOMPUTER</label>
+                    <input type="text" id="namaKomputer" placeholder="Contoh: PC-01 / LAB1-PC05" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jenisKerusakan">JENIS KERUSAKAN</label>
+                    <textarea id="jenisKerusakan" rows="3" placeholder="Deskripsikan kerusakan (misal: Monitor mati, Keyboard tidak merespon)" required></textarea>
+                </div>
+
+                <button type="submit" id="btnSubmit">Simpan Data</button>
+            </form>
+        </section>
+
+        <!-- Tabel Data Inventaris -->
+        <section class="card">
+            <h3>Daftar Inventaris / Laporan Kerusakan</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>NAMA LAB</th>
+                            <th>NAMA KOMPUTER</th>
+                            <th>JENIS KERUSAKAN</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="4" class="text-center">Memuat data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
